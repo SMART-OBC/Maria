@@ -96,6 +96,5 @@
 "account_activa_account_700001","Diverse baten en lasten","700001","account.data_account_type_expenses","TRUE"
 "account_activa_account_710001","Claim expenses","710001","account.data_account_type_expenses","TRUE"
 "account_activa_account_770001","Exchange Gain or Loss","770001","account.data_account_type_expenses","TRUE"
-"account_activa_account_999991","Year End","999991","account.data_unaffected_earnings","TRUE"
 "account_activa_account_1000011","Cross Entries","1000011","account.data_account_off_sheet","FALSE"
 "account_activa_account_299991","Vraagposten","299991","account.data_account_off_sheet","FALSE"
