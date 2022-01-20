@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="account_account_only_fields_form_view_inherited" model="ir.ui.view">
+        <field name="name">account.account.form.fields.inherited</field>
+        <field name="model">account.account</field>
+        <field name="inherit_id" ref="account.view_account_form"/>
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+<!--                  <button class="oe_stat_button" name="coa_invoice.action_move_select" string="Invoices/Bill" type="action" icon="fa-bars"/>-->
+                  <button class="oe_stat_button" name="action_invoice"
+                          string="Invoices/Bill" type="object" icon="fa-pencil-square-o"
+                          context = "{'quickbook':1}"
+                  />
+
+            </div>
+        </field>
+    </record>
+
+<!--    <record id="action_move_select" model="ir.actions.act_window">-->
+<!--        <field name="name">Invoices/Bill</field>-->
+<!--        <field name="res_model">account.move</field>-->
+<!--        <field name="context">{'search_default_account_id': [active_id]}</field>-->
+<!--    </record>-->
+
+</odoo>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="account_move_form_view_inherited" model="ir.ui.view">
+        <field name="name">account.move.form.fields.inherited</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <button name="action_reverse" position="after">
+                <button name="action_write_off" string="Write off" type="object"
+                        attrs="{'invisible': [('move_type', 'not in', ('out_invoice', 'in_invoice'))]}"
+                        context="{'default_account_move_id':id}"
+                />
+            </button>
+
+        </field>
+    </record>
+
+
+</odoo>
